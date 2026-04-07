@@ -1,5 +1,6 @@
 aid: cbre
-url: https://raw.githubusercontent.com/api-evangelist/cbre/refs/heads/main/apis.yml
+url: 
+  https://raw.githubusercontent.com/api-evangelist/cbre/refs/heads/main/apis.yml
 modified: '2026-03-21'
 apis:
   - aid: cbre:cbre-api
@@ -9,7 +10,8 @@ apis:
       - Commercial Property
       - Analytics
       - Facilities
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: 
+      https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     baseURL: https://api.cbre.com
     humanURL: https://developer.cbre.com/
     properties:
@@ -18,4 +20,10 @@ apis:
       - url: openapi/cbre-cbre-api-openapi.yml
         type: OpenAPI
     description: >-
-      CBRE provides APIs for commercial real estate data including property listings, market analytics, and facility management. The platform enables partners to access CBRE's real estate intelligence.
+      CBRE provides APIs for commercial real estate data including property listings,
+      market analytics, and facility management. The platform enables partners to
+      access CBRE's real estate intelligence.
+description: >-
+  CBRE is a global commercial real estate services and investment firm offering advisory,
+  transaction, project management, property management, valuation, investment management,
+  and consulting services.
