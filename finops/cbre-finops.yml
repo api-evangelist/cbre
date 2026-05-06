@@ -1,138 +1,85 @@
 specification: FinOps Framework
 specificationVersion: '1.0'
+schema: https://www.finops.org/framework/
+provider: CBRE
+providerId: cbre
+created: '2026-05-04'
+modified: '2026-05-05'
+reconciled: false
+tags:
+  - Commercial Real Estate
+  - Real Estate
+  - FinOps
+  - FOCUS
+description: 'FOCUS-aligned FinOps scaffold for CBRE. CBRE invoices are dominated by service-line fees
+  (transaction services, project management, facilities management, valuation, investment management);
+  the API surface is bundled into those engagements. FinOps reporting tracks API consumption to allocate
+  the bundled cost rather than to drive a per-call invoice.'
+notes: Direct per-call API pricing is not published; cost is captured within the parent CBRE service
+  contract.
+sources:
+  - https://developer.cbre.com/
+  - https://www.cbre.com
 alignedWith:
   framework: FinOps Foundation Framework
   frameworkUrl: https://www.finops.org/framework/
   dataSpec: FOCUS
   dataSpecVersion: '1.3'
   dataSpecUrl: https://focus.finops.org/focus-specification/v1-3/
-provider: CBRE
-providerId: cbre
-publisherName: CBRE
-serviceCategory: API
-created: '2026-05-04'
-modified: '2026-05-04'
-tags:
-  - Analytics
-  - Commercial Real Estate
-  - Facilities Management
-  - Fortune 500
-  - Investment Management
-  - Property Management
-  - Real Estate
-  - Valuation
-  - FinOps
-  - Cost Management
-  - FOCUS
-description: FinOps framework definition for the CBRE API surface. Provides a FOCUS-aligned mapping for
-  cost allocation, usage measurement, and unit-economics reporting across the provider's APIs.
-principles:
-  - name: Visibility
-    description: Make API consumption costs visible to engineering, product, and finance teams in near
-      real-time.
-  - name: Allocation
-    description: Tag every chargeable API call with the consuming team, environment, application, and
-      feature so cost can be allocated.
-  - name: Optimization
-    description: Continuously evaluate request patterns, caching, batching, and tier selection to reduce
-      cost per useful unit of work.
-  - name: Accountability
-    description: Establish budget owners and chargeback or showback flows for each consuming team.
-domains:
-  - name: Understand Usage and Cost
-    capabilities:
-      - Data Ingestion
-      - Allocation
-      - Reporting and Analytics
-      - Anomaly Management
-  - name: Quantify Business Value
-    capabilities:
-      - Planning and Estimating
-      - Forecasting
-      - Budgeting
-      - Benchmarking
-      - Unit Economics
-  - name: Optimize Usage and Cost
-    capabilities:
-      - Architecting for Cloud
-      - Rate Optimization
-      - Workload Optimization
-      - Cloud Sustainability
-      - Licensing and SaaS
-  - name: Manage the FinOps Practice
-    capabilities:
-      - FinOps Practice Operations
-      - FinOps Education and Enablement
-      - Invoicing and Chargeback
-      - Onboarding Workloads
-      - Intersecting Disciplines
+publisherName: CBRE Group, Inc.
+serviceCategory: Commercial Real Estate Services
 billingModel:
-  pricingCategory: Usage-Based
+  pricingCategory: Service Contract (API Bundled)
   billingFrequency: Monthly
   billingCurrency: USD
   chargeCategories:
-    - Usage
     - Purchase
-    - Tax
-    - Credit
     - Adjustment
-  chargeFrequency: Recurring
 focusColumns:
-  ServiceName: CBRE
-  ServiceCategory: Developer Tools / API
+  ServiceName: CBRE Developer API
+  ServiceCategory: Commercial Real Estate Services
   ProviderName: CBRE
-  PublisherName: CBRE
-  InvoiceIssuerName: CBRE
-  PricingCategory: Usage-Based
-  PricingUnit: request
+  PublisherName: CBRE Group, Inc.
+  InvoiceIssuerName: CBRE Group, Inc.
   BillingCurrency: USD
-  ChargeCategory: Usage
 meters:
   - name: api_requests
-    description: Count of billable API requests
     unit: request
     aggregation: sum
     dimensions:
       - api
-      - endpoint
-      - tier
+      - application
+      - service_line
+  - name: properties_under_management
+    unit: property
+    aggregation: count
+    dimensions:
       - region
-      - consumer
-  - name: data_egress
-    description: Bytes returned over the network in API responses
-    unit: GB
+      - service_line
+  - name: square_feet_managed
+    unit: sqft
     aggregation: sum
     dimensions:
-      - api
       - region
-      - consumer
-  - name: compute_seconds
-    description: Server-side compute consumed by the request, where applicable
-    unit: second
-    aggregation: sum
+      - service_line
+  - name: work_orders_processed
+    unit: work_order
+    aggregation: count
     dimensions:
-      - api
-      - endpoint
-      - tier
-apis:
-  - name: CBRE Developer API
-    baseURL: https://api.cbre.com
-    tags:
-      - Analytics
-      - Commercial Property
-      - Facilities
-      - Investment
-      - Real Estate
-      - Valuation
-    serviceName: CBRE Developer API
-    serviceCategory: API
-unitEconomics:
-  - name: Cost per 1K Requests
-    metric: billed_cost / (api_requests / 1000)
-    target: TBD
-  - name: Cost per Active Consumer
-    metric: billed_cost / active_consumers
-    target: TBD
+      - region
+principles:
+  - name: Visibility
+    description: Pair API call volume from the developer-portal application reports with the CBRE service-line
+      invoice to see where consumption concentrates.
+  - name: Allocation
+    description: Allocate CBRE service fees to the property / portfolio they support; tag API calls with
+      the same property identifier for consistency.
+  - name: Optimization
+    description: Cache market analytics that update at low cadence; pull facilities work-order data on
+      change events rather than polling; consolidate reporting queries.
+  - name: Accountability
+    description: Real-estate leader owns CBRE service spend; integration platform owner ensures API consumption
+      stays within the entitlement bundled into the contract.
 maintainers:
   - FN: API Evangelist
     email: info@apievangelist.com
