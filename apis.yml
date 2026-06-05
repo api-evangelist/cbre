@@ -16,35 +16,35 @@ access: 3rd-Party
 created: '2026-03-21'
 modified: '2026-05-19'
 position: Consumer
-description: 'CBRE Group, Inc. (NYSE: CBRE) is the world''s largest commercial real estate services and investment firm, with
-  155,000 professionals across 500+ offices in 100+ countries. CBRE provides advisory and transaction, project management,
-  property management, valuation, investment management, and consulting services. Its technology arm publishes developer APIs
-  through developer.cbre.com that expose property, analytics, and facilities data to partners.'
+description: >-
+  CBRE Group, Inc. (NYSE: CBRE) is the world's largest commercial real estate services and investment firm, with 155,000
+  professionals across 500+ offices in 100+ countries. CBRE provides advisory and transaction, project management,
+  property management, valuation, investment management, and consulting services. Its technology arm publishes developer
+  APIs through developer.cbre.com that expose property, analytics, and facilities data to partners.
 apis:
   - aid: cbre:cbre-api
     name: CBRE Developer API
     tags:
-    - Analytics
-    - Commercial Property
-    - Facilities
-    - Investment
-    - Real Estate
-    - Valuation
+      - Analytics
+      - Commercial Property
+      - Facilities
+      - Investment
+      - Real Estate
+      - Valuation
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     baseURL: https://api.cbre.com
     humanURL: https://developer.cbre.com/
     properties:
-    - url: https://developer.cbre.com/
-      type: Documentation
-    - url: openapi/cbre-cbre-api-openapi.yml
-      type: OpenAPI
-    - url: https://developer.cbre.com/
-      type: Portal
-    - type: NaftikoCapability
-      url: capabilities/cbre-real-estate.yaml
-    description: CBRE provides APIs for commercial real estate data including property listings, market analytics, facilities
-      management, lease administration, valuation, and investment management. The platform enables partners and clients to access
-      CBRE's real estate intelligence and integrate with internal systems.
+      - url: https://developer.cbre.com/
+        type: Documentation
+      - url: openapi/cbre-cbre-api-openapi.yml
+        type: OpenAPI
+      - url: https://developer.cbre.com/
+        type: Portal
+    description: >-
+      CBRE provides APIs for commercial real estate data including property listings, market analytics, facilities
+      management, lease administration, valuation, and investment management. The platform enables partners and clients
+      to access CBRE's real estate intelligence and integrate with internal systems.
 common:
   - type: GitHubOrganization
     url: https://github.com/CBRE
@@ -77,28 +77,28 @@ common:
   - name: Features
     type: Features
     data:
-    - name: Property Search
-    - name: Listing Management
-    - name: Lease Administration
-    - name: Market Analytics
-    - name: Valuation
-    - name: Facilities Management
-    - name: Work Order Management
-    - name: Space Utilization
-    - name: Investment Management
-    - name: Transaction Services
-    - name: Portfolio Reporting
-    - name: Sustainability Metrics
+      - name: Property Search
+      - name: Listing Management
+      - name: Lease Administration
+      - name: Market Analytics
+      - name: Valuation
+      - name: Facilities Management
+      - name: Work Order Management
+      - name: Space Utilization
+      - name: Investment Management
+      - name: Transaction Services
+      - name: Portfolio Reporting
+      - name: Sustainability Metrics
   - name: UseCases
     type: UseCases
     data:
-    - name: Corporate Real Estate Portfolio Management
-    - name: Commercial Property Marketing
-    - name: Facilities Operations
-    - name: Lease Accounting (ASC 842 / IFRS 16)
-    - name: Investment Fund Reporting
-    - name: Workplace Occupancy Analytics
-    - name: Market Research and Forecasting
+      - name: Corporate Real Estate Portfolio Management
+      - name: Commercial Property Marketing
+      - name: Facilities Operations
+      - name: Lease Accounting (ASC 842 / IFRS 16)
+      - name: Investment Fund Reporting
+      - name: Workplace Occupancy Analytics
+      - name: Market Research and Forecasting
 maintainers:
   - FN: API Evangelist
     email: info@apievangelist.com
