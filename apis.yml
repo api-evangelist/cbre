@@ -11,7 +11,7 @@ tags:
   - Real Estate
   - Valuation
 type: Index
-image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 access: 3rd-Party
 created: '2026-03-21'
 modified: '2026-05-19'
@@ -31,7 +31,7 @@ apis:
       - Investment
       - Real Estate
       - Valuation
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     baseURL: https://api.cbre.com
     humanURL: https://developer.cbre.com/
     properties:
