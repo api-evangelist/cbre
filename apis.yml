@@ -46,6 +46,8 @@ apis:
       management, lease administration, valuation, and investment management. The platform enables partners and clients
       to access CBRE's real estate intelligence and integrate with internal systems.
 common:
+  - type: AgenticAccess
+    url: agentic-access/cbre-agentic-access.yml
   - type: DomainSecurity
     url: security/cbre-domain-security.yml
   - type: Authentication
