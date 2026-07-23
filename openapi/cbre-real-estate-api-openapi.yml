@@ -1,32 +1,27 @@
 openapi: 3.1.0
 info:
-  title: CBRE API
-  description: >-
-    CBRE provides APIs for commercial real estate data including property listings, market analytics, and facility management. The platform enables partners to access CBRE's real estate intelligence.
+  title: CBRE Real Estate API
+  description: CBRE provides APIs for commercial real estate data including property listings, market analytics, and facility management. The platform enables partners to access CBRE's real estate intelligence.
   version: '1.0'
   contact:
     name: CBRE Developer Support
     url: https://developer.cbre.com/
-externalDocs:
-  description: Documentation
-  url: https://developer.cbre.com/
 servers:
-  - url: https://api.cbre.com
-    description: Production
-tags:
-  - name: Real Estate
-    description: Real Estate operations
+- url: https://api.cbre.com
+  description: Production
 security:
-  - bearerAuth: []
+- bearerAuth: []
+tags:
+- name: Real Estate
+  description: Real Estate operations
 paths:
   /status:
     get:
       operationId: getStatus
       summary: Get API status
-      description: >-
-        Returns the current status of the API.
+      description: Returns the current status of the API.
       tags:
-        - Real Estate
+      - Real Estate
       responses:
         '200':
           description: Success
@@ -48,3 +43,6 @@ components:
     bearerAuth:
       type: http
       scheme: bearer
+externalDocs:
+  description: Documentation
+  url: https://developer.cbre.com/
