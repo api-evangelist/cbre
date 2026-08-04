@@ -1,0 +1,14 @@
+{
+  "provider": "cbre",
+  "sources": [
+    "cbre-real-estate-api-openapi.yml"
+  ],
+  "outputs": [
+    "cbre-real-estate-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
