@@ -39,17 +39,18 @@ accessModel:
   try_now: true
   public: false
   label: Free · Self-serve signup
-  confidence: high
+  confidence: medium
   source:
   - plans
   - authentication
-  generated: '2026-07-22'
+  - security
+  generated: '2026-09-03'
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/cbre.png
 access: 3rd-Party
 created: '2026-03-21'
 modified: '2026-05-19'
-position: Consumer
+position: Consuming
 description: >-
   CBRE Group, Inc. (NYSE: CBRE) is the world's largest commercial real estate services and investment firm, with 155,000
   professionals across 500+ offices in 100+ countries. CBRE provides advisory and transaction, project management,
