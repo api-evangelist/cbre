@@ -1,7 +1,9 @@
 ---
 title: CBRE Deepens AI And Data Center Push As Valuation ...
 url: https://finance.yahoo.com/news/cbre-deepens-ai-data-center-210925799.html
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"CBRE Group" press release artificial intelligence'
 position: 5
 source: serpapi-google

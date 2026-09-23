@@ -1,7 +1,9 @@
 ---
 title: Companies Add Artificial Intelligence Expertise with ...
 url: https://www.cbre.com/press-releases/companies-add-artificial-intelligence-expertise-with-specialized-jobs-skills-amid-slower-tech-talent
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"CBRE Group" press release artificial intelligence'
 position: 1
 source: serpapi-google
