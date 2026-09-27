@@ -8,7 +8,7 @@ tags:
   - Fortune 500
   - Investment Management
   - Property Management
-  - Real-Estate
+  - Real Estate
   - Valuation
 tags_raw:
   - Analytics
@@ -19,6 +19,7 @@ tags_raw:
   - Property Management
   - Real Estate
   - Valuation
+  - Real-Estate
 type: Index
 deliveryModel:
   model: saas
@@ -63,9 +64,10 @@ apis:
   humanURL: https://developer.cbre.com/
   baseURL: https://api.cbre.com
   tags:
-  - Real-Estate
+  - Real Estate
   tags_raw:
   - Real Estate
+  - Real-Estate
   properties:
   - type: OpenAPI
     url: openapi/cbre-real-estate-api-openapi.yml
