@@ -76,6 +76,12 @@ apis:
   - type: Portal
     url: https://developer.cbre.com/
 common:
+  - type: Plans
+    url: plans/cbre-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/cbre-rate-limits.yml
+  - type: FinOps
+    url: finops/cbre-finops.yml
   - type: AgenticAccess
     url: agentic-access/cbre-agentic-access.yml
   - type: DomainSecurity
