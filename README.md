@@ -1,4 +1,4 @@
-# CBRE (cbre)
+# CBRE
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,76 +66,116 @@
 
 CBRE Group, Inc. (NYSE: CBRE) is the world's largest commercial real estate services and investment firm, with 155,000 professionals across 500+ offices in 100+ countries. CBRE provides advisory and transaction, project management, property management, valuation, investment management, and consulting services. Its technology arm publishes developer APIs through developer.cbre.com that expose property, analytics, and facilities data to partners.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/cbre/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/cbre/refs/heads/main/apis.yml)
+**Areas:** Analytics · Commercial Real Estate · Facilities Management · Fortune 500 · Investment Management · Property Management · Real Estate · Valuation
 
-## Scope
+## CBRE on APIs.io
 
-- **Type:** Index
-- **Position:** Consumer
-- **Access:** 3rd-Party
+Everything profiled for CBRE is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/cbre/](https://apis.io/providers/cbre/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (1)
 
-- Analytics
-- Commercial Real Estate
-- Facilities Management
-- Fortune 500
-- Investment Management
-- Property Management
-- Real Estate
-- Valuation
+- [CBRE Real Estate API](https://apis.io/apis/cbre/cbre-real-estate-api/) — Real Estate operations
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-03-21
-- **Modified:** 2026-05-19
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Agentic access (1)
 
-### CBRE Developer API
+Which operations an agent can call, which act, and which need a human in the loop.
 
-CBRE provides APIs for commercial real estate data including property listings, market analytics, facilities management, lease administration, valuation, and investment management. The platform enables partners and clients to access CBRE's real estate intelligence and integrate with internal systems.
+- [Cbre Agentic Access](https://apis.io/agentic-access/cbre/cbre-agentic-access/)
 
-- **Human URL:** [https://developer.cbre.com/](https://developer.cbre.com/)
-- **Base URL:** `https://api.cbre.com`
+#### Collections (2)
 
-#### Tags
+Postman and Open Collection request collections.
 
-- Analytics
-- Commercial Property
-- Facilities
-- Investment
-- Real Estate
-- Valuation
+- [CBRE API](https://apis.io/collections/cbre/open-cbre-cbre-api/)
+- [CBRE Real Estate API](https://apis.io/collections/cbre/open-cbre-real-estate-api/)
 
-#### Properties
+#### Security (2)
 
-- [Documentation](https://developer.cbre.com/)
-- [OpenAPI](openapi/cbre-cbre-api-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/cbre-cbre-api.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/cbre-cbre-api.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-- [Portal](https://developer.cbre.com/)
+Authentication, trust centre, and vulnerability disclosure.
 
-## Common Properties
+- [Cbre Authentication](https://apis.io/security/cbre/cbre-authentication/)
+- [Cbre Domain Security](https://apis.io/security/cbre/cbre-domain-security/)
 
-- [GitHub Organization](https://github.com/CBRE)
-- [LinkedIn](https://www.linkedin.com/company/cbre)
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Cbre Plans Pricing](https://apis.io/plans/cbre/cbre-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Cbre Rate Limits](https://apis.io/rate-limits/cbre/cbre-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Cbre Finops](https://apis.io/finops/cbre/cbre-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
 - [Website](https://www.cbre.com)
-- [About](https://www.cbre.com/about-us)
-- [Careers](https://www.cbre.com/careers)
-- [Investor Relations](https://ir.cbre.com)
-- [Newsroom](https://www.cbre.com/about-us/newsroom)
-- [Press Releases](https://www.cbre.com/about-us/newsroom)
-- [Research](https://www.cbre.com/insights)
-- [Sustainability](https://www.cbre.com/services/energy-and-sustainability-solutions)
-- [Contact](https://www.cbre.com/about-us/culture-and-history/contact-us)
-- [Terms of Service](https://www.cbre.com/about-us/disclaimer-terms-of-use)
-- [Privacy Policy](https://www.cbre.com/about-us/global-privacy-and-cookie-notice)
-- [Portal](https://developer.cbre.com/)
-- [Features](undefined)
-- [Use Cases](undefined)
+- [Terms of service](https://www.cbre.com/about-us/disclaimer-terms-of-use)
+- [Privacy policy](https://www.cbre.com/about-us/global-privacy-and-cookie-notice)
+- [GitHub](https://github.com/CBRE)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** API Evangelist
-**Email:** info@apievangelist.com
+**Kin Score 31.8** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 67.0 |
+| Contract quality | 51.4 |
+| Contract governance | 0.0 |
+| Operational transparency | 7.9 |
+| Developer ergonomics | 26.2 |
+| Access clarity | 26.3 |
+
+**Agent readiness 20.7** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | na |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | na |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | na |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 19.6** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/cbre/](https://apis.io/providers/cbre/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for CBRE: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/cbre/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
